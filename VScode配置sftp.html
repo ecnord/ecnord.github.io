@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>点击左侧Extensions(快捷键Ctrl+Shift+x) 搜索SFTP并安装</title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h2 id="点击左侧extensions快捷键ctrlshiftx-搜索sftp并安装">点击左侧Extensions(快捷键Ctrl+Shift+x) 搜索SFTP并安装</h2>
+<p><img src="file:///c:\Users\usamido\python_work\文章\VScode上SFTP\1.jpg" alt="avatar"></p>
+<p><img src="file:///c:\Users\usamido\python_work\文章\VScode上SFTP\2.jpg" alt="avatar"></p>
+<h2 id="安装后ctrlshiftp-输入sftpconfig-进行配置">安装后Ctrl+Shift+p 输入SFTP:Config 进行配置</h2>
+<p><img src="file:///c:\Users\usamido\python_work\文章\VScode上SFTP\3.jpg" alt="avatar"></p>
+<h2 id="初始配置">初始配置:</h2>
+<p><img src="file:///c:\Users\usamido\python_work\文章\VScode上SFTP\4.jpg" alt="avatar"></p>
+<pre><code><code><div>{
+    &quot;name&quot;: &quot;服务器名称&quot;,
+    &quot;host&quot;: &quot;localhost&quot;,
+    &quot;protocol&quot;: &quot;文件传输协议sftp/ftp&quot;,
+    &quot;port&quot;: 22,
+    &quot;username&quot;: &quot;管理员用户名&quot;,
+    &quot;password&quot;: &quot;设置过后每次upload无需输入密码&quot;
+    &quot;remotePath&quot;: &quot;远程文件路径 不推荐放在主目录&quot;,
+    &quot;uploadOnSave&quot;: true
+}
+</div></code></code></pre>
+<h2 id="实例">实例:</h2>
+<pre><code><code><div>{
+    &quot;name&quot;: &quot;server&quot;,
+    &quot;host&quot;: &quot;10.1.1.11&quot;,
+    &quot;port&quot;: 11,
+    &quot;protocol&quot;: &quot;sftp&quot;,
+    &quot;username&quot;: &quot;usamido&quot;,
+    &quot;password&quot;: &quot;********&quot;,
+    &quot;remotePath&quot;: &quot;/home/usamido/crawler&quot;,
+    &quot;uploadOnSave&quot;: true ,
+}
+</div></code></code></pre>
+<h2 id="如果出现超时无响应-添加-connecttimeout-即可">如果出现超时无响应 添加 connectTimeout 即可</h2>
+<pre><code><code><div>{
+    &quot;name&quot;: &quot;server&quot;,
+    &quot;host&quot;: &quot;10.1.1.11&quot;,
+    &quot;port&quot;: 11,
+    &quot;protocol&quot;: &quot;sftp&quot;,
+    &quot;username&quot;: &quot;usamido&quot;,
+    &quot;password&quot;: &quot;********&quot;,
+    &quot;remotePath&quot;: &quot;/home/usamido/crawler&quot;,
+    &quot;uploadOnSave&quot;: true ,
+    &quot;connectTimeout&quot;: 10000
+}
+</div></code></code></pre>
+<h2 id="左侧文件栏中-右键点击文件名-选择upload">左侧文件栏中 右键点击文件名 选择upload</h2>
+<p><img src="file:///c:\Users\usamido\python_work\文章\VScode上SFTP\5.jpg" alt="avatar"></p>
+<h2 id="左下角显示成功">左下角显示成功</h2>
+<p><img src="file:///c:\Users\usamido\python_work\文章\VScode上SFTP\6.jpg" alt="avatar"></p>
+
+    </body>
+    </html>
