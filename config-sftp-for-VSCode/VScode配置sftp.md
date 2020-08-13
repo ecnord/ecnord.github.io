@@ -2,6 +2,7 @@
 
 ## 点击左侧Extensions(快捷键Ctrl+Shift+x) 搜索SFTP并安装
 
+
 ![avatar](./1.jpg)
 
 ![avatar](./2.jpg)
