@@ -12,6 +12,6 @@
 运行：
 
 - docker images 列出本地镜像
-- docker run -it -v /home/user/home/user  python:3.7 "/bin/bash"   语句顺序先后问题 [option]在前commands在后 (docker -h)
+- docker run -it -v /home/user:/home/user  python:3.7 "/bin/bash"   语句顺序先后问题 [option]在前commands在后
 - cd /home/user/crawler
 - python test.py
